@@ -1,0 +1,26 @@
+.user-name{
+    font-size: 12px;
+    font-weight: semi-bold;
+    color: #4A4A4A;
+}
+
+.user-role{
+    font-size: 10px;
+    color: #4A4A4A;
+}
+
+.user-email{
+    font-size: 10px;
+    color: #7E7E7E;
+}
+
+.detail-header{
+    font-size: 10px;
+    font-weight: semi-bold;
+    color: #4A4A4A;
+}
+
+.detail-item{
+    font-size: 10px;
+    color: #4A4A4A;
+}

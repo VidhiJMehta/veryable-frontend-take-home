@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import UserCard from './components/userCard';
+import users from './data/users.json';
+import Button from '@mui/material/Button';
+function userCards () {
+  
+  // for each user in users, create a UserCard component
+  // and pass in the user's data as props
+  return users.map(user => {
+    return (
+      <UserCard
+        name={user.firstName + " " + user.lastName}
+        role={user.role}
+        email={user.email}
+        address={user.street + ", " + user.city + ", " + user.state + " " + user.zip}
+        phone={user.phone}
+        createdAt={user.createdAt}
+        lastLoggedIn={user.lastLoggedIn}
+      />
+    );
+  });
+}
+
+// function moreInfo() {
+  
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{backgroundColor: '#f1f5f6'}}>
+      <Header />
+      {userCards()}
     </div>
   );
 }

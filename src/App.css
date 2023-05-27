@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities
 .App {
   text-align: center;
 }
@@ -36,3 +39,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*
+Nav Header
+— 18px
+— Uppercase — #4A4A4A
+User Name
+— 12px
+— Semi-bold — #4A4A4A
+User Role
+— 10px
+— #4A4A4A
+Email
+— 10px
+— #7E7E7E
+Detail Header
+— 10px
+— Semi-bold — #4A4A4A
+Detail Item
+— 10px
+— #4A4A4A
+*/
+
